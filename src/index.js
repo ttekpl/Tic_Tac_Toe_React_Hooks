@@ -104,7 +104,7 @@ function App() {
       <button className="refresh" onClick={onRefresh}>
         Refresh
       </button>
-      <h1 className="info">{winner ? winner : null}</h1>
+      {winner ? alert(winner) : null}
     </div>
   );
 }
