@@ -1,0 +1,87 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, blue, violet);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  height: 600px;
+  width: 600px;
+  border: 2px solid purple;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: violet;
+  font-size: 100px;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.who {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.refresh {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  font-size: 30px;
+  border: 3px solid purple;
+  border-radius: 5px;
+  padding: 5px 30px;
+  color: violet;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.refresh:hover {
+  box-shadow: 0 5px 10px -6px pink;
+}
+
+.line {
+  position: absolute;
+  background-color: violet;
+}
+.pion {
+  height: 600px;
+  width: 20px;
+}
+.poziom {
+  height: 20px;
+  width: 600px;
+}
